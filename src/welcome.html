@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome X</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div class="container h-screen flex items-center justify-center">
+        <h1 class="text-4xl"></h1>
+    </div>
+    <script>
+        const welcomeMessage = document.querySelector("h1")
+        const username = localStorage.getItem("username")
+
+        welcomeMessage.textContent = "Welcome " + username + "!"
+       
+    </script>
+</body>
+</html>
